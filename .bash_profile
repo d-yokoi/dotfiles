@@ -18,5 +18,5 @@ export NDK_ROOT=~/opt/android-ndk-r9d
 export PATH=$NDK_ROOT:$PATH
 
 # Include .bashrc
-[[ -r ~/.bashrc ]] && . ~/.bashrc
-[[ -r ~/.bashrc_private ]] && . ~/.bashrc_private
+[[ -e ~/.bashrc ]] && . ~/.bashrc
+[[ -e ~/.bashrc_private ]] && . ~/.bashrc_private
