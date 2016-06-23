@@ -19,4 +19,4 @@ export PATH=$NDK_ROOT:$PATH
 
 # Include .bashrc
 [[ -e ~/.bashrc ]] && . ~/.bashrc
-[[ -e ~/.bashrc_private ]] && . ~/.bashrc_private
+[[ -e ~/.bashrc_secret ]] && . ~/.bashrc_secret
