@@ -1,0 +1,25 @@
+[core]
+  pager = less -q -R
+  excludesfile = ~/.gitignore
+  preloadindex = true
+
+[color]
+  ui = auto
+
+[alias]
+  st = status
+  br = branch
+  ci = commit
+  co = checkout
+  df = diff
+
+[help]
+  autocorrect = 1
+
+[push]
+  default = nothing
+
+[pager]
+  log  = diff-highlight | less -RX
+  show = diff-highlight | less -RX
+  diff = diff-highlight | less -RX
