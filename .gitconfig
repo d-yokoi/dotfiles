@@ -1,25 +1,28 @@
 [core]
-  pager = less -q -R
-  excludesfile = ~/.gitignore
-  preloadindex = true
+pager = less -q -R
+excludesfile = ~/.gitignore
+preloadindex = true
 
 [color]
-  ui = auto
+ui = auto
 
 [alias]
-  st = status
-  br = branch
-  ci = commit
-  co = checkout
-  df = diff
+st = status
+br = branch
+ci = commit
+co = checkout
+df = diff
 
 [help]
-  autocorrect = 1
+autocorrect = 1
 
 [push]
-  default = nothing
+default = nothing
 
 [pager]
-  log  = diff-highlight | less -RX
-  show = diff-highlight | less -RX
-  diff = diff-highlight | less -RX
+log  = diff-highlight | less -RX
+show = diff-highlight | less -RX
+diff = diff-highlight | less -RX
+
+[include]
+path = ~/.gitconfig.secret
