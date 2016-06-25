@@ -11,6 +11,7 @@ set t_Co=256
 set number
 set title
 set list
+set showmatch
 set ambiwidth=double
 set expandtab
 set tabstop=2
