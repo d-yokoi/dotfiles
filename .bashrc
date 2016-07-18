@@ -7,6 +7,3 @@ else
 fi
 
 [[ -e ~/.phpbrew/bashrc ]] && . ~/.phpbrew/bashrc
-
-export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
-export LESS='-giMR -j10 --no-init --quit-if-one-screen'
