@@ -17,9 +17,11 @@ export EDITOR=vim
 PATH=$PATH:~/Library/Android/sdk/platform-tools
 PATH=$PATH:~/Library/Android/sdk/tools
 
-# NDK for cocos2d-x
-export NDK_ROOT=~/opt/android-ndk-r9d
-export PATH=$NDK_ROOT:$PATH
+# environment variables for cocos2d-x
+export COCOS2D_CONSOLE_ROOT=/
+export NDK_ROOT=$HOME/AndroidDev/android-ndk-r9d
+export ANDROID_SDK_ROOT=$HOME/AndroidDev/AndroidDev/adt-bundle-mac-x86_64-20140321/sdk
+export ANT_ROOT=/usr/local/bin
 
 # Include .bashrc
 [[ -e ~/.bashrc ]] && . ~/.bashrc
