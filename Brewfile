@@ -1,0 +1,36 @@
+tap 'caskroom/cask'
+tap 'homebrew/bundle'
+tap 'homebrew/services'
+brew 'bash-completion'
+brew 'cmake'
+brew 'flatbuffers'
+brew 'git'
+brew 'mas'
+brew 'python3'
+brew 'source-highlight'
+brew 'tmux'
+brew 'tree'
+brew 'wget'
+cask '1password'
+cask 'alfred'
+cask 'appcleaner'
+cask 'atom'
+cask 'dash'
+cask 'flux'
+cask 'google-japanese-ime'
+cask 'gyazo'
+cask 'hosts'
+cask 'iterm2'
+cask 'java'
+cask 'kindle'
+cask 'shiftit'
+cask 'silverlight'
+cask 'skitch'
+cask 'vagrant'
+cask 'virtualbox'
+mas 'LINE', id: 539883307
+mas 'Evernote', id: 406056744
+mas 'Disk Diag', id: 672206759
+mas 'Xcode', id: 497799835
+mas 'Motion', id: 434290957
+mas 'Todoist', id: 585829637
