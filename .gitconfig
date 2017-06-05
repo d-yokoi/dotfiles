@@ -26,3 +26,7 @@ diff = diff-highlight | less -RX
 
 [include]
 path = ~/.gitconfig.secret
+
+[merge "mergepbx"]
+	name = Xcode project files merger
+	driver = mergepbx %O %A %B

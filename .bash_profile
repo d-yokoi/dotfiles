@@ -1,6 +1,8 @@
 # .bash_profile
 # User specific environment and startup programs
 
+export PATH=/usr/local/bin:$PATH
+
 # Terminal UI
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
