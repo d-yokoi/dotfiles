@@ -8,16 +8,34 @@ ui = auto
 
 [alias]
 st = status
+ss = status --short
 br = branch
 ci = commit
+cm = commit -m
 co = checkout
 df = diff
+dc = diff --cached
+undo = reset --soft HEAD^
+stash-all = stash save --include-untracked
+glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
 [help]
 autocorrect = 1
 
+[status]
+showUntrackedFiles = all
+
 [push]
-default = nothing
+default = simple
+followTags = true
+
+[diff]
+tool = icdiff
+[difftool]
+prompt = false
+[difftool "icdiff"]
+cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+
 
 [pager]
 log  = diff-highlight | less -RX
@@ -26,6 +44,10 @@ diff = diff-highlight | less -RX
 
 [include]
 path = ~/.gitconfig.secret
+
+[merge]
+ff = only
+conflictstyle = diff3
 
 [merge "mergepbx"]
 	name = Xcode project files merger
