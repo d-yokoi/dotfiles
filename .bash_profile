@@ -23,6 +23,11 @@ export PATH=$ANDROID_SDK_ROOT:$PATH
 export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
 export ANT_ROOT=/usr/local/bin
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # Include .bashrc
 [[ -e ~/.bash_profile.secret ]] && . ~/.bash_profile.secret
 [[ -e ~/.bashrc ]] && . ~/.bashrc
