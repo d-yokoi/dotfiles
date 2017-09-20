@@ -13,6 +13,7 @@ br = branch
 ci = commit
 cm = commit -m
 co = checkout
+cb = checkout -b
 df = diff
 dc = diff --cached
 lg = log --graph --decorate
@@ -36,7 +37,6 @@ tool = icdiff
 prompt = false
 [difftool "icdiff"]
 cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
-
 
 [pager]
 log  = diff-highlight | less -RX
