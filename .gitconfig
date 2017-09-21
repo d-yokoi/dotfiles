@@ -7,17 +7,22 @@ preloadindex = true
 ui = auto
 
 [alias]
-st = status
-ss = status --short
 br = branch
 ci = commit
 cm = commit -m
 co = checkout
 cb = checkout -b
+d = diff
 df = diff
 dc = diff --cached
+f = fetch --prune
 lg = log --graph --decorate
 undo = reset --soft HEAD^
+s = status --short
+st = status
+sb = submodule
+su = submodule update
+sur = submodule update --recursive
 stash-all = stash save --include-untracked
 glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
