@@ -11,6 +11,8 @@ fi
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ '
 
+export PAGER=less
+export LESSCHARSET='utf-8'
 export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
 export LESS='-giMR -j10 --no-init --quit-if-one-screen'
 export EDITOR=vim
