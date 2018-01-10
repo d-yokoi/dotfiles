@@ -1,7 +1,7 @@
 # .bash_profile
 # User specific environment and startup programs
 
-export PATH=/usr/local/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
 
 # Terminal UI
 if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
@@ -11,6 +11,7 @@ fi
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\n\$ '
 
+export LANG="ja_JP.UTF-8"
 export PAGER=less
 export LESSCHARSET='utf-8'
 export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
