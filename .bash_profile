@@ -31,7 +31,13 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+if [ "$(uname)" = 'Darwin' ]; then
+    # export LSCOLORS=xbfxcxdxbxegedabagacad
+    alias ls='ls -GwF'
+else
+    eval `dircolors ~/.colorrc`
+    alias ls='ls --color=auto'
+fi
+
 # Include .bashrc
 [[ -e ~/.bash_profile.secret ]] && . ~/.bash_profile.secret
-[[ -e ~/.bashrc ]] && . ~/.bashrc
-[[ -e ~/.bashrc.secret ]] && . ~/.bashrc.secret
