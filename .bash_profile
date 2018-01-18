@@ -43,5 +43,4 @@ if type vim >/dev/null 2>&1; then
   alias vi='vim'
 fi
 
-# Include .bashrc
 [[ -e ~/.bash_profile.secret ]] && . ~/.bash_profile.secret
