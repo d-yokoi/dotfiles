@@ -53,6 +53,7 @@ alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias df="cd ~/dotfiles"
+alias p="cd ~/projects"
 alias g="git"
 
 [[ -e ~/.bash_profile.secret ]] && . ~/.bash_profile.secret
