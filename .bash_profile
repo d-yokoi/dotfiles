@@ -36,13 +36,17 @@ export nvm_dir="$home/.nvm"
 [ -s "$nvm_dir/nvm.sh" ] && \. "$nvm_dir/nvm.sh"  # this loads nvm
 [ -s "$nvm_dir/bash_completion" ] && \. "$nvm_dir/bash_completion"  # this loads nvm bash_completion
 
-if [ "$(uname)" = 'Darwin' ]; then
-    # export LSCOLORS=xbfxcxdxbxegedabagacad
-    alias ls='ls -GwF'
-else
-    eval `dircolors ~/.colorrc`
-    alias ls='ls --color=auto'
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+  colorflag="--color"
+else # macOS `ls`
+  colorflag="-G"
 fi
+
+alias ls="command ls -F ${colorflag}"
+alias a="ls -a"
+alias l="ls -l"
+alias la="ls -la"
 
 command -v vim > /dev/null && alias vi='vim'
 
