@@ -48,4 +48,11 @@ if type vim >/dev/null 2>&1; then
   alias vi='vim'
 fi
 
+# Shortcuts
+alias db="cd ~/Dropbox"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias df="cd ~/dotfiles"
+alias g="git"
+
 [[ -e ~/.bash_profile.secret ]] && . ~/.bash_profile.secret
