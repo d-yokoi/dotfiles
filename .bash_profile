@@ -44,9 +44,7 @@ else
     alias ls='ls --color=auto'
 fi
 
-if type vim >/dev/null 2>&1; then
-  alias vi='vim'
-fi
+command -v vim > /dev/null && alias vi='vim'
 
 # Shortcuts
 alias db="cd ~/Dropbox"
