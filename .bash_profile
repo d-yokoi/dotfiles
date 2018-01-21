@@ -31,6 +31,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# rbenv
+eval "$(rbenv init -)"
+
 # nvm
 export nvm_dir="$home/.nvm"
 [ -s "$nvm_dir/nvm.sh" ] && \. "$nvm_dir/nvm.sh"  # this loads nvm
