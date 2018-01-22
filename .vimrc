@@ -40,6 +40,8 @@ set hlsearch
 set ignorecase
 " Highlight dynamically as pattern is typed
 set incsearch
+" Always show status line
+set laststatus=2
 " Enable mouse in all modes
 set mouse=a
 " Disable error bells
@@ -48,6 +50,8 @@ set noerrorbells
 set nostartofline
 " Show the cursor position
 set ruler
+" Use 2 screen lines for the command-line
+set cmdheight=2
 " Don’t show the intro message when starting Vim
 set shortmess=atI
 " Show the current mode
