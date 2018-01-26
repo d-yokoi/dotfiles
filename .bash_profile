@@ -1,5 +1,4 @@
-# .bash_profile
-# User specific environment and startup programs
+# .bash_profile # User specific environment and startup programs
 
 export PATH="/usr/local/bin:$PATH"
 
@@ -57,7 +56,7 @@ command -v vim > /dev/null && alias vi='vim'
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias df="cd ~/dotfiles"
+alias d="cd ~/dotfiles"
 alias p="cd ~/projects"
 alias g="git"
 
