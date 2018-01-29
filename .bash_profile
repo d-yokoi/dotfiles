@@ -17,6 +17,12 @@ export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
 export LESS='-giMR -j10 --no-init --quit-if-one-screen'
 export EDITOR=vim
 
+# Increase Bash history size. Allow 32³ entries; the default is 500.
+export HISTSIZE='32768';
+export HISTFILESIZE="${HISTSIZE}";
+# Omit duplicates and commands that begin with a space from history.
+export HISTCONTROL='ignoreboth';
+
 # environment variables for cocos2d-x
 export COCOS2D_CONSOLE_ROOT=/
 export NDK_ROOT=$HOME/AndroidDev/android-ndk-r13
