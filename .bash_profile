@@ -59,6 +59,9 @@ alias a="ls -a"
 alias l="ls -l"
 alias la="ls -la"
 
+alias cp="cp -i"
+alias mv="mv -i"
+
 command -v vim > /dev/null && alias vi='vim'
 
 # Shortcuts
