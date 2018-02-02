@@ -110,3 +110,4 @@ set autoindent
 inoremap <silent> jj <ESC>
 
 autocmd Filetype c setlocal ts=4 sts=4 sw=4
+autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
