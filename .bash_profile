@@ -62,6 +62,8 @@ alias la="ls -la"
 alias cp="cp -i"
 alias mv="mv -i"
 
+alias gcc="gcc -Wall -O2"
+
 command -v vim > /dev/null && alias vi='vim'
 
 # Shortcuts
