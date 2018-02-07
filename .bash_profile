@@ -47,6 +47,9 @@ export NVM_DIR="$HOME/.nvm"
 # GnuPG
 export PATH="/usr/local/opt/gnupg@2.0/bin:$PATH"
 
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
   colorflag="--color"
