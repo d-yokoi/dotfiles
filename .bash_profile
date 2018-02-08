@@ -77,4 +77,7 @@ alias d="cd ~/dotfiles"
 alias p="cd ~/projects"
 alias g="git"
 
+# Append to the Bash history file, rather than overwriting it
+shopt -s histappend;
+
 [[ -e ~/.bash_profile.secret ]] && . ~/.bash_profile.secret
