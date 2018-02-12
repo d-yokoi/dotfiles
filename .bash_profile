@@ -84,4 +84,7 @@ shopt -s histappend;
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
+# `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
+shopt -s autocd;
+
 [[ -e ~/.bash_profile.secret ]] && . ~/.bash_profile.secret
