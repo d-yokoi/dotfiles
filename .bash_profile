@@ -78,6 +78,8 @@ alias d="cd ~/dotfiles"
 alias p="cd ~/projects"
 alias g="git"
 
+alias update='brew update; brew upgrade; brew cleanup;'
+
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
 
@@ -86,5 +88,8 @@ shopt -s cdspell;
 
 # `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
 shopt -s autocd;
+
+# Highlight section titles in manual pages.
+export LESS_TERMCAP_md="$(tput setaf 136)";
 
 [[ -e ~/.bash_profile.secret ]] && . ~/.bash_profile.secret
