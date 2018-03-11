@@ -6,10 +6,15 @@ preloadindex = true
 [color]
 ui = auto
 
+
 [alias]
 br = branch
 ci = commit
 cm = commit -m
+
+# Amend the currently staged files to the latest commit
+amend = commit --amend --reuse-message=HEAD
+
 co = checkout
 cb = checkout -b
 d = diff
@@ -25,6 +30,21 @@ su = submodule update
 sur = submodule update --recursive
 stash-all = stash save --include-untracked
 glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
+# Show user name of remote repository
+owner = "!f() { git remote get-url ${1:-origin} | cut -d: -f2 | cut -d/ -f1; }; f"
+
+# Launch browser and open page for creating a new pull request
+pr = "!f() { \
+        local source_user; \
+        source_user=$(git config --get user.name); \
+        git remote -v | grep -q ${source_user}; \
+        if [[ ! $? ]]; then \
+          source_user=origin; \
+        fi; \
+        hub browse -- pull/$(git owner ${1:-origin}):${2:-develop}...${source_user}:$(git rev-parse --abbrev-ref HEAD); \
+      }; f"
+
 
 [help]
 autocorrect = 1
