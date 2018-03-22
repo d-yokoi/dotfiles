@@ -42,7 +42,10 @@ pr = "!f() { \
         if [[ ! $? ]]; then \
           source_user=origin; \
         fi; \
-        hub browse -- pull/$(git owner ${1:-origin}):${2:-develop}...${source_user}:$(git rev-parse --abbrev-ref HEAD); \
+        local current_branch; \
+        current_branch=$(git rev-parse --abbrev-ref HEAD); \
+        git push -f ${source_user} ${current_branch}; \
+        hub browse -- pull/$(git owner ${1:-origin}):${2:-develop}...${source_user}:${current_branch}; \
       }; f"
 
 
