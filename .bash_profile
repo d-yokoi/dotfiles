@@ -71,6 +71,7 @@ alias gcc="gcc -Wall -O2"
 command -v vim > /dev/null && alias vi='vim'
 
 # Shortcuts
+alias x="cd -"
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
