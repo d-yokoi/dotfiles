@@ -6,3 +6,13 @@ osascript -e 'tell application "System Preferences" to quit'
 
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
+
+# Use managed VSCode settings
+(
+  link_dir=$(cd "$(dirname "$0")"/vscode || exit $?; pwd -P)
+  cd ~/Library/Application\ Support/Code/User || exit $?
+  ln -fnsv "${link_dir}"/settings.json ./settings.json
+  ln -fnsv "${link_dir}"/keybindings.json ./keybindings.json
+  ln -fnsv "${link_dir}"/snippets/ snippets
+)
+
