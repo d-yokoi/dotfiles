@@ -48,6 +48,9 @@ export NVM_DIR="$HOME/.nvm"
 # go
 export GOPATH=$(go env GOPATH)
 
+# gvm
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
 # GnuPG
 export GPG_TTY=$(tty)
 
