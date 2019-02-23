@@ -82,7 +82,7 @@ alias d="cd ~/dotfiles"
 alias p="cd ~/projects"
 alias g="git"
 
-alias update='brew update; brew upgrade; brew cleanup;'
+alias update='brew update; brew upgrade; brew cleanup; brew bundle dump --force --describe'
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
