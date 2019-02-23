@@ -10,4 +10,8 @@
             "after": ["<Esc>"]
         }
     ],
+    "explorer.confirmDragAndDrop": false,
+
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "breadcrumbs.enabled": true
 }
