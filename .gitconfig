@@ -17,6 +17,7 @@ amend = commit --amend --reuse-message=HEAD
 
 co = checkout
 cb = checkout -b
+cb = checkout -B
 d = diff
 df = diff
 dc = diff --cached
