@@ -65,6 +65,9 @@ autocorrect = 1
 [status]
 showUntrackedFiles = all
 
+[pull]
+ff = only
+
 [push]
 default = simple
 followTags = true
