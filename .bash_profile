@@ -56,6 +56,9 @@ export NVM_DIR="$HOME/.nvm"
 # GnuPG
 export GPG_TTY=$(tty)
 
+# GitHub CLI
+eval "$(gh completion -s bash)"
+
 # fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -89,6 +92,10 @@ alias g="git"
 
 alias update='brew update; brew upgrade; brew cleanup;'
 
+# https://qiita.com/itkrt2y/items/0671d1f48e66f21241e2
+alias g='cd $(ghq root)/$(ghq list | peco)'
+alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
+
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
 
@@ -102,3 +109,4 @@ shopt -s autocd;
 export LESS_TERMCAP_md="$(tput setaf 136)";
 
 [[ -e ~/.bash_profile.secret ]] && . ~/.bash_profile.secret
+if [ -e "$HOME/.nix-profile/etc/profile.d/nix.sh" ]; then . "$HOME/.nix-profile/etc/profile.d/nix.sh"; fi # added by Nix installer
