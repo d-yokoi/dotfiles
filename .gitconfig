@@ -10,7 +10,7 @@ ui = auto
 [alias]
 br = branch
 ci = commit
-cm = commit -m
+cm = commit -S -m
 
 # Amend the currently staged files to the latest commit
 amend = commit --amend --reuse-message=HEAD
