@@ -53,6 +53,9 @@ export NVM_DIR="$HOME/.nvm"
 # gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
+# rustup
+. "$HOME/.cargo/env"
+
 # GnuPG
 export GPG_TTY=$(tty)
 
